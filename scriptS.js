@@ -120,17 +120,6 @@ phishingLink.addEventListener('click', function (e) {
   // Zobrazíme demo overlay — simulácia "nefunkčnej" stránky
   var overlay = document.createElement('div');
   overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:inherit;';
-  overlay.innerHTML = `
-    <div style="text-align:center;max-width:500px;padding:20px;">
-      <h2 style="color:#1a2a3a;margin-bottom:12px;">&#9888; Stránka nie je dostupná</h2>
-      <p style="color:#6b7a8d;margin-bottom:8px;">Požadovaný dokument sa nepodarilo načítať.</p>
-      <p style="color:#8a97a6;font-size:.85rem;margin-bottom:24px;">ERR_CONNECTION_TIMED_OUT — globalcagrosolutions.ltd</p>
-      <p style="background:#fff3e0;border:1px solid #f0d060;padding:14px 18px;border-radius:8px;color:#856404;font-size:.88rem;margin-bottom:20px;">
-        <strong>DEMO POZNÁMKA:</strong> V reálnom scenári by táto stránka potichu zachytila údaje z prehliadača obete. Toto je len bezpečná simulácia.
-      </p>
-      <button onclick="this.parentElement.parentElement.remove();" style="padding:10px 28px;background:#2e6bbf;color:#fff;border:none;border-radius:6px;font-size:.95rem;cursor:pointer;font-family:inherit;font-weight:600;">Zavrieť a vrátiť sa</button>
-    </div>
-  `;
   document.body.appendChild(overlay);
 });
 
